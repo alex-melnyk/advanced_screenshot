@@ -2,6 +2,14 @@
 
 A Flutter package that provides remote screenshot capture via a built-in debug HTTP server. Take screenshots of your running Flutter app from any terminal or CI script — works on all platforms.
 
+## Getting started
+
+Add to your `pubspec.yaml`:
+
+```bash
+flutter pub add advanced_screenshot
+```
+
 ## Features
 
 - 📸 **Remote screenshot capture** via HTTP API
@@ -70,7 +78,8 @@ ScreenshotServer(
 
 ```bash
 adb forward tcp:8080 tcp:8080
-curl http://localhost:8080/screenshot --output screenshot.png
+curl -H "Authorization: Bearer <token>" \
+  http://localhost:8080/screenshot --output screenshot.png
 ```
 
 ### iOS device
@@ -78,7 +87,8 @@ curl http://localhost:8080/screenshot --output screenshot.png
 Connect to the device's IP address on the same Wi-Fi network:
 
 ```bash
-curl http://<device-ip>:8080/screenshot --output screenshot.png
+curl -H "Authorization: Bearer <token>" \
+  http://<device-ip>:8080/screenshot --output screenshot.png
 ```
 
 ## API
