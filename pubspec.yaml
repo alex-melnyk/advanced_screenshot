@@ -1,0 +1,21 @@
+name: advanced_screenshot
+description: >-
+  A Flutter package that provides remote screenshot capture via a built-in
+  debug HTTP server. Take screenshots of your running Flutter app from any
+  terminal or CI script — works on all platforms.
+version: 0.1.0
+homepage: https://github.com/alexmelnyk/advanced_screenshot
+
+environment:
+  sdk: ^3.9.2
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  uuid: ^4.5.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
