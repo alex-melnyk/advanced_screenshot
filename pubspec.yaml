@@ -4,7 +4,8 @@ description: >-
   debug HTTP server. Take screenshots of your running Flutter app from any
   terminal or CI script — works on all platforms.
 version: 0.1.0
-homepage: https://github.com/alexmelnyk/advanced_screenshot
+homepage: https://github.com/alex-melnyk/advanced_screenshot
+repository: https://github.com/alex-melnyk/advanced_screenshot
 
 environment:
   sdk: ^3.9.2
